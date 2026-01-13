@@ -1,0 +1,139 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><p>&lt;!DOCTYPE html&gt;</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Mory ❤️</title>
+  <style>
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: &#39;Georgia&#39;, serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #2d2d2d;
+      overflow-x: hidden;
+    }
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      position: relative;
+    }
+    h1 { font-size: clamp(2.5rem,6vw,3.5rem); margin-bottom: 15px; }
+    h2 { font-size: clamp(1.8rem,5vw,2.5rem); margin-bottom: 20px; }
+    p { max-width: 700px; font-size: clamp(1.05rem,4vw,1.3rem); line-height: 1.8; text-align: center; }
+    button {
+      margin-top: 30px;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 999px;
+      background: #ff5e78;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 90%; max-width: 320px;
+      transition: 0.3s;
+    }
+    button:hover { background: #ff2f55; transform: scale(1.05); }
+    .heart { font-size: clamp(2.5rem,8vw,3.5rem); animation: pulse 1.5s infinite; margin: 20px 0; }
+    @keyframes pulse { 0%{transform:scale(1);}50%{transform:scale(1.2);}100%{transform:scale(1);} }
+    .floating-heart {
+      position: absolute; font-size: 1.5rem; animation: floatUp 6s linear infinite;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) rotate(0deg); opacity:0; }
+      50% { opacity:1; }
+      100% { transform: translateY(-10vh) rotate(360deg); opacity:0; }
+    }
+    .music { font-size: 0.9rem; opacity: 0.85; margin-top: 18px; }
+    section#final { background: linear-gradient(135deg,#fbc2eb,#a6c1ee); }
+  </style>
+</head>
+<body>
+
+<script>
+  const password = prompt(&quot;Enter our date (DD/MM/YYYY)&quot;);
+  if(password !== &quot;27/3/2022&quot;) {
+    document.body.innerHTML = &quot;<h1 style='margin-top:40vh;font-family:Georgia;'>This space is only for us ❤️</h1>&quot;;
+    throw new Error(&#39;Access denied&#39;);
+  }
+</script>
+
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_0c8f1c0e63.mp3?filename=romantic-piano-112191.mp3" type="audio/mpeg">
+</audio>
+
+<section id="intro">
+  <h1>Mory ❤️</h1>
+  <p>I made a little world just for you. Scroll down, breathe, and feel it.</p>
+  <div class="heart">💗</div>
+  <button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">Start</button>
+  <div class="music">🎶 Put on a Tamer Hosny song before you continue</div>
+</section>
+
+<section id="story">
+  <h2>Where We Began</h2>
+  <p>Remember church? Yeah, that’s where all of this started. Who knew that sitting there, I’d meet my favorite person ever? That’s you. Every smile, every laugh since then, it’s been magic.</p>
+  <button onclick="document.getElementById('reasons').scrollIntoView({behavior:'smooth'})">Next</button>
+  <div class="floating-heart" style="left:20%; animation-delay:0s;">💖</div>
+  <div class="floating-heart" style="left:60%; animation-delay:2s;">💞</div>
+  <div class="floating-heart" style="left:40%; animation-delay:4s;">❤️</div>
+</section>
+
+<section id="reasons">
+  <h2>Why You Mean Everything to Me</h2>
+  <p>
+    Even with the distance between us, you’ve always been close.
+    We keep fighting every circumstance that tries to get in our way — together.
+    Thank you for choosing to stay. For choosing me.
+  </p>
+  <p>
+    Thank you for being there all the time, especially in my bad days before the good ones.
+    Thank you for supporting me when I was at my worst, and for believing in me
+    even when I couldn’t believe in myself.
+  </p>
+  <p>
+    You are my peace. My safe place. The place I escape to when everything feels heavy.
+    You’re not far from me — you live with me every day, in my mind and in my heart.
+  </p>
+  <div class="heart">💞</div>
+  <button onclick="document.getElementById('future').scrollIntoView({behavior:'smooth'})">Next</button>
+</section>
+
+<section id="future">
+  <h2>What I’m Waiting For</h2>
+  <p>
+    I can’t stand the waiting for our next meeting.
+    I think about the day I come back and we finally do all the things we planned.
+    Walking, laughing, hanging out, having fun — just us, together, in the same place.
+  </p>
+  <p>
+    I love everything about us — our chats, our calls, our only photo,
+    and all the small things that mean the world to me.
+  </p>
+  <div class="heart">❤️</div>
+</section>
+
+<section id="final">
+  <h2>Forever</h2>
+  <p>
+    Thank you for your love.
+    Thank you for accepting me with all my imperfections.
+    Thank you for being God’s gift to me, and the happiest coincidence of my life.
+  </p>
+  <p>
+    I love you more than you can imagine — more than words could ever describe.
+    I don’t just want moments with you… I want a forever with you.
+  </p>
+  <div class="heart">🌎❤️♥️</div>
+  <p><strong>I wish to be together forever, Mory.</strong></p>
+</section>
+
+</body>
+</html>
+</body></html>
